@@ -10,16 +10,16 @@
   </head>
   <body>
     <div class="tab-container">
-      <ul>
+      <ul class="tabs">
         <!-- each list element has a data attr that allows us to specify in JS which information should be revealed at any given click -->
-        <li data-tab-target="#home">HOME</li>
-        <li data-tab-target="#pricing">PRICING</li>
-        <li data-tab-target="#about">ABOUT</li>
+        <li data-tab-target="#home" class="active tab">Home</li>
+        <li data-tab-target="#pricing" class="tab">Pricing</li>
+        <li data-tab-target="#about" class="tab">About</li>
       </ul>
     </div>
 
     <div class="tab-content">
-      <div id="home" data-tab-content>
+      <div id="home" data-tab-content class="active">
         <h1>Home</h1>
         <p>
           This is where it all begins. Lorem ipsum dolor, sit amet consectetur
