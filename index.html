@@ -11,28 +11,29 @@
   <body>
     <div class="tab-container">
       <ul>
-        <li>HOME</li>
-        <li>PRICING</li>
-        <li>ABOUT</li>
+        <!-- each list element has a data attr that allows us to specify in JS which information should be revealed at any given click -->
+        <li data-tab-target="#home">HOME</li>
+        <li data-tab-target="#pricing">PRICING</li>
+        <li data-tab-target="#about">ABOUT</li>
       </ul>
     </div>
 
     <div class="tab-content">
-      <div id="home">
+      <div id="home" data-tab-content>
         <h1>Home</h1>
         <p>
           This is where it all begins. Lorem ipsum dolor, sit amet consectetur
           adipisicing elit. Iste, neque similique.
         </p>
       </div>
-      <div id="pricing">
+      <div id="pricing" data-tab-content>
         <h1>Pricing</h1>
         <p>
           How much things cost around here. Lorem ipsum dolor, sit amet
           consectetur adipisicing elit. Iste, neque similique.
         </p>
       </div>
-      <div id="home">
+      <div id="about" data-tab-content>
         <h1>About</h1>
         <p>
           Info about me. Lorem ipsum dolor, sit amet consectetur adipisicing

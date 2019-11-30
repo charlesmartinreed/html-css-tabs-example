@@ -5,3 +5,11 @@
   padding: 0;
   box-shadow: border-box;
 }
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
